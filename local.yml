@@ -18,9 +18,9 @@
       owner: root
       group: root
 
-  -name: set wallpaper
-   become_user: ansible
-   dconf:
+  - name: set wallpaper
+    become_user: ansible
+    dconf:
       key: "/org/gnome/desktop/background/picture-uri"
       value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"
 
