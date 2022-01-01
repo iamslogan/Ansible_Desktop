@@ -30,3 +30,9 @@
       key: "/org/gnome/desktop/background/picture-options"
       value: "'zoom'"
 
+  - name: copy .bashrc file
+    copy:
+      src: files/bashrc
+      dest: /home/ansible/.bashrc
+      owner: ansible
+      group: ansible
