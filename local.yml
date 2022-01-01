@@ -45,7 +45,7 @@
   - name: set up sudo for velociraptor ansible user
     copy:
       src: files/sudoer_velociraptor
-      dest: /etc/dudoers.d/velociraptor
+      dest: /etc/sudoers.d/velociraptor
       owner: root
       group: root
       mode: 0440
